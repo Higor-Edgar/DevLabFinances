@@ -1,45 +1,42 @@
-
 #include <iostream>
 
 using namespace std;
 
 int main() {
-
-	string nome;
+	string name;
 	string email;
-	string senha;
+	string password;
 	char condition;
 
 	cout << "DevLab Corporation\n";
 
 	cout << "Ja possui uma conta?\n";
-	cout << "Digite s para sim ou n para nao. \n";
+	cout << "Digite s para sim ou n para nao: ";
 	cin >> condition;
 
 	if (condition == 's') {
-
 		cout << "Criar Conta:\n";
 
 		cout << "Digite um nome de usuario: ";
-		cin >> nome;
+		cin >> name;
 
 		cout << "Digite seu email: ";
 		cin >> email;
 
 		cout << "Crie uma senha: ";
-		cin >> senha;
+		cin >> password;
 	}
-
-	if (condition == 'n') {
-
+	else if (condition == 'n') {
 		cout << "Insira seu usuario e senha\n";
 
 		cout << "Usuario: ";
-		cin >> nome;
+		cin >> name;
 
 		cout << "Senha: ";
-		cin >> senha;
-
+		cin >> password;
+	}
+	else {
+		cout << "Opcão inválida!";
 	}
 
 	return 0;
