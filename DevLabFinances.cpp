@@ -26,8 +26,7 @@ int main() {
 		cout << "Crie uma senha: ";
 		cin >> password;
 	}
-
-	if (condition == 'n') {
+	else if (condition == 'n') {
 		cout << "Insira seu usuario e senha\n";
 
 		cout << "Usuario: ";
@@ -35,6 +34,9 @@ int main() {
 
 		cout << "Senha: ";
 		cin >> password;
+	}
+	else {
+		cout << "Opcão inválida!";
 	}
 
 	return 0;
